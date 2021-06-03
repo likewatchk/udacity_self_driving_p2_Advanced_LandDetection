@@ -37,10 +37,10 @@ And, There are pipelines for single image and video.
 Camera Calibration step needs some `Chessboard images`. In this project, there are the images you gave for camera calibration. I used these images. 
 
 1. corners finding loop.
-  a. read image.  `mpimg.imread` or `cv2.imread`
-  b. change it to gray-scale. `cv2.cvtColor(RGB2GRAY)` or `cv2.cvtColor(BGR2GRAY)`
-  c. find corners. `cv2.findChessboardCorners`
-  d. collect corners and object points.
+  a. read image.  `mpimg.imread` or `cv2.imread` </br>
+  b. change it to gray-scale. `cv2.cvtColor(RGB2GRAY)` or `cv2.cvtColor(BGR2GRAY)`</br>
+  c. find corners. `cv2.findChessboardCorners`</br>
+  d. collect corners and object points.</br>
 2. calibrate camera using collected corner-points and object points
   (object points is the points with real-world coordinate pairing with the corner-points(image-points).
   ```python
